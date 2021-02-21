@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "1. gyakorlat", "1. gyakorlat.sqlproj", "{2E8B6712-CD0F-4301-A9CD-3BFC8A184A8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E8B6712-CD0F-4301-A9CD-3BFC8A184A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8B6712-CD0F-4301-A9CD-3BFC8A184A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8B6712-CD0F-4301-A9CD-3BFC8A184A8E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2E8B6712-CD0F-4301-A9CD-3BFC8A184A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8B6712-CD0F-4301-A9CD-3BFC8A184A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E8B6712-CD0F-4301-A9CD-3BFC8A184A8E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EAA3335-F9ED-4491-B3CC-F8829ABE57D9}
+	EndGlobalSection
+EndGlobal
