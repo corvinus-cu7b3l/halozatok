@@ -1,0 +1,17 @@
+﻿body {
+}
+.sor {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    top: 50%;
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+} 
