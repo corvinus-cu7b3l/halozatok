@@ -2,7 +2,7 @@
 var KérdésSorszáma = 0;
 
 function letöltés() {
-    fetch('questions.json')
+    fetch('question.json')
         .then(response => response.json())
         .then(data => letöltésKész(data));
 }
