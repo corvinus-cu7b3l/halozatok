@@ -14,6 +14,8 @@ function letöltésKész(d) {
     kérdésMegjelenítés(0);
 }
 
+
+
 var kérdésMegjelenítés = function (kérdésSzáma) {
 
     let kérdés_szöveg = document.getElementById("kérdés_szöveg");
@@ -35,7 +37,24 @@ var kérdésMegjelenítés = function (kérdésSzáma) {
     válasz2.innerText = kérdés[kérdésSzáma].answer2
     válasz3.innerText = kérdés[kérdésSzáma].answer3
 }
+/*
+fetch('/questions/1')
+    .then(response => response.json())
+    .then(data => kérdésMegjelenítés(data))
 
+function kérdésBetöltés(id) {
+    fetch('/questions/${id}')
+        .then(response => {
+            if (!response.ok) {
+                console.error('Hibás válasz: $(response.status}')
+            }
+            else {
+                return response.json()
+            }
+        })
+        .then(data=>kérdésMegjelenítés(data))
+}
+*/
 
 window.onload = () => {
 
