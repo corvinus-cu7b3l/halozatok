@@ -16,7 +16,7 @@ namespace HajosTeszt.Controllers
         [Route("questions/all")]
         public ActionResult M1()
         {
-            hajostesztContext context = new hajostesztContext();
+            HajostesztContext context = new HajostesztContext();
             var kérdések = from x in context.Questions select x.QuestionText;
 
             return new JsonResult(kérdések);
@@ -26,7 +26,7 @@ namespace HajosTeszt.Controllers
         [Route("questions/count")]
         public int M2()
         {
-            hajostesztContext context = new hajostesztContext();
+            HajostesztContext context = new HajostesztContext();
             int kérdésekSzáma = context.Questions.Count();
             return kérdésekSzáma;
         }
@@ -34,7 +34,7 @@ namespace HajosTeszt.Controllers
         [Route("questions/{sorszám}")]
         public ActionResult M3(int sorszám) 
         {
-            hajostesztContext context = new hajostesztContext();
+            HajostesztContext context = new HajostesztContext();
             var kérdés = (from x in context.Questions
                           where x.QuestionId == sorszám
                           select x).FirstOrDefault();

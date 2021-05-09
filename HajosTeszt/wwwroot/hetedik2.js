@@ -19,13 +19,26 @@ function letöltésBefejeződött(d) {
     kérdésMegjelenítés(0)
 };
 
-function kérdésMegjelenítés(kerdes) {
+function kérdésMegjelenítés() { 
+    let kerdes = hotList[displayedQuestion].question;
     document.getElementById("kérdés_szöveg").innerHTML = kérdések[kerdes].questionText
     document.getElementById("válasz1").innerHTML = kérdések[kerdes].answer1
     document.getElementById("válasz2").innerHTML = kérdések[kerdes].answer2
     document.getElementById("válasz3").innerHTML = kérdések[kerdes].answer3
-    document.getElementById("kép1").src = `https://szoft1.comeback.hu/hajo/${kérdések[kerdes].image}`
-};
+
+    if (kerdes.image)
+    {
+        document.getElementById("kép1").src = kerdes.image;
+        document.getElementById("kép1").style.display="block"
+    }
+    else
+    {
+        document.getElementById("kép1").style.display = "none";
+    }
+    //document.getElementById("kép1").src = `https://szoft1.comeback.hu/hajo/${kérdések[kerdes].image}`
+}
+
+window.onload = init;
 
 function vissza() {
     if (kérdésSorszám != 0) {

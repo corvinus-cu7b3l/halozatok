@@ -1,5 +1,6 @@
 ﻿body {
     height: 100%;
+    background-color:lightgreen;
 }
 
 div {
@@ -11,9 +12,13 @@ div {
     height: 100%;
     display: flex;
     flex-direction: column;
+    padding:10px;
+
 }
 
 #kérdés_szöveg {
+    display:flex;
+    flex-direction:row;
 }
 
 #középső {
@@ -41,7 +46,30 @@ div {
 .gomb {
     padding: 20px;
     width: 80px;
+    cursor:pointer;
+}
+    .gomb:hover {
+        background-color:azure;
+        color:white;
+        cursor:pointer;
+    }
+
+.kattinthato:hover {
+    background-color:azure;
+    color:white;
+    cursor:pointer;
+}
+.kerdes {
+    padding:10px;
+    border-radius:10px;
 }
 
-.kerdes {
+.jó {
+    background-color:forestgreen;
+    color:white
+}
+
+.rossz {
+    background-color:red;
+    color:white;
 }
